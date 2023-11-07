@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication and Division Calculator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    input, button {
+      width: 50%; /* Reduce the width to 50% */
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .result {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Multiplication and Division Calculator</h1>
+
+  <form>
+    <label for="firstNumber">First number:</label>
+    <input type="number" id="firstNumber" placeholder="First number"><br>
+    <label for="secondNumber">Second number:</label>
+    <input type="number" id="secondNumber" placeholder="Second number">
+    <button type="button" onclick="multiply()">Multiply</button>
+    <button type="button" onclick="divide()">Divide</button>
+  </form>
+
+  <div class="result"></div>
+
+  <script>
+    function multiply() {
+      var firstNumber = document.getElementById("firstNumber").value;
+      var secondNumber = document.getElementById("secondNumber").value;
+      var result = firstNumber * secondNumber;
+
+      document.querySelector(".result").innerHTML = result;
+    }
+
+    function divide() {
+      var firstNumber = document.getElementById("firstNumber").value;
+      var secondNumber = document.getElementById("secondNumber").value;
+      var result = firstNumber / secondNumber;
+
+      document.querySelector(".result").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
+
+<!-- Submitted By : Chandresh Patel 21BCE11379 -->

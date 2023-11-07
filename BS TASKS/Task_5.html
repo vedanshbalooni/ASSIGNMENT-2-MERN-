@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+      <form role="form" action="" method="post">
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+              <span class="icon fa fa-user fa-lg"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+              <span class="icon fa fa-user fa-lg"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="email">E-Mail Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail Address" required>
+              <span class="icon fa fa-envelope fa-lg"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="phone">Phone #</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone #" required>
+              <span class="icon fa fa-phone fa-lg"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+              <span class="icon fa fa-home fa-lg"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+              <span class="icon fa fa-building fa-lg"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="state">State</label>
+              <select class="form-control" id="state" name="state" required>
+                <option value="">Please select your state</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+              </select>
+              <span class="icon fa fa-map-marker fa-lg"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="hosting">Do you have hosting?</label>
+              <div class="radio">
+                <label for="hostingYes">Yes</label>
+                <input type="radio" name="hosting" id="hostingYes" value="Yes" checked>
+              </div>
+              <div class="radio">
+                <label for="hostingNo">No</label>
+                <input type="radio" name="hosting" id="hostingNo" value="No">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="projectDescription">Project Description</label>
+              <textarea class="form-control" id="projectDescription" name="projectDescription" rows="5" placeholder="Project Description"></textarea>
+              <span class="icon fa fa-file-text fa-lg"></span>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Submitted By : Chandresh Patel 21BCE11379 -->

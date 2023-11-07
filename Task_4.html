@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <button id="showDateBtn" class="btn btn-primary">Show Date</button><br/>
+        <br/>
+        <button id="showTimeBtn" class="btn btn-primary">Show Time</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function formatDate(date) {
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            return new Date(date).toLocaleDateString('en-US', options);
+        }
+
+        function formatTime(date) {
+            const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            return new Date(date).toLocaleDateString('en-US', options) + ' GMT+0530 (India Standard Time)';
+        }
+
+        document.getElementById('showDateBtn').addEventListener('click', function () {
+            const currentDate = new Date();
+            const formattedDate = formatDate(currentDate);
+            document.getElementById('dateResult').innerHTML = `Date: ${formattedDate}`;
+        });
+
+        document.getElementById('showTimeBtn').addEventListener('click', function () {
+            const currentDate = new Date();
+            const formattedTime = formatTime(currentDate);
+            document.getElementById('timeResult').innerHTML = `Time: ${formattedTime}`;
+        });
+    </script>
+
+    <div class="container mt-3">
+        <p id="dateResult"></p>
+        <p id="timeResult"></p>
+    </div>
+</body>
+</html>
+
+<!-- Submitted By : Chandresh Patel 21BCE11379 -->
